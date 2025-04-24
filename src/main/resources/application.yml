@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/kora_db?useSSL=false&serverTimeZone=UTC&useLegacyDatetimeCode=false
+    username: root
+    password: Cristian021*
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api/v1/v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /api/v1/doc/swagger-ui.html
+
+  packages-to-scan: com.kora
+  paths-to-match: /api/v1/**
