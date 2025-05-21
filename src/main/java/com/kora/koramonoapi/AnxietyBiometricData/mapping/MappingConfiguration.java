@@ -10,4 +10,7 @@ public class MappingConfiguration {
 
     @Bean
     public AnxietyAssessmentMapper anxietyAssessmentMapper() { return new AnxietyAssessmentMapper();}
+
+    @Bean
+    public SelfPerceptionMapper selfPerceptionMapper() { return new SelfPerceptionMapper();}
 }
